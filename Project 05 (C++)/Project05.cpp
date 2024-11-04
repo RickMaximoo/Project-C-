@@ -8,12 +8,12 @@ void desenharTriangulo(int linhas, char caractere)
 {
     for (int i = 1; i <= linhas; i++)
     {
-        // Ajustando o espaçamento para centralizar o triângulo
+       
         for (int j = 1; j <= linhas - i; j++)
         {
             cout << " ";
         }
-        // Imprimindo os caracteres
+      
         for (int k = 1; k <= i; k++)
         {
             cout << caractere;
@@ -32,7 +32,7 @@ int main()
     cout << "Quantas linhas deve ter o triângulo? ";
     cin >> linhas;
 
-    // Validar entrada
+    
     while (linhas <= 0)
     {
         cout << "O número de linhas deve ser positivo. Tente novamente: ";

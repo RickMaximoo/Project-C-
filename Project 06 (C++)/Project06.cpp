@@ -4,12 +4,11 @@
 
 using namespace std;
 
-// Função para calcular o fatorial de um número
 long long calcularFatorial(int n) 
 {
     if (n < 0) {
         cout << "O fatorial não está definido para números negativos." << endl;
-        return -1; // Indica erro
+        return -1;
     }
 
     long long fatorial = 1;
