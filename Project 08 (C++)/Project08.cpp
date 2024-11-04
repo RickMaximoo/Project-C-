@@ -6,7 +6,8 @@ using namespace std;
 int main()
 {
     setlocale(LC_ALL, "portuguese");
-    int codigo, quantidade, total = 0;
+    int codigo, quantidade;
+    double total = 0.0;
     char opcao;
 
     do
@@ -39,7 +40,7 @@ int main()
             total += quantidade * 7.00;
             break;
         case 103:
-            cout << "Quantidade de Pizaa Brotinho: ";
+            cout << "Quantidade de Pizza Brotinho: ";
             cin >> quantidade;
             total += quantidade * 8.00;
             break;
@@ -54,10 +55,9 @@ int main()
 
         cout << "Deseja adicionar mais algum item? (S/N): ";
         cin >> opcao;
-    }
+    } while (opcao == 'S' || opcao == 's');
 
-     while (opcao == 'S' || opcao == 's');
-
+    cout << fixed << setprecision(2);
     cout << "O valor total do seu pedido é: R$" << total << endl;
 
     return 0;
