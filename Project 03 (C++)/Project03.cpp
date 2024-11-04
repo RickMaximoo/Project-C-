@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
+#include <locale.h>
 using namespace std;
 
 enum class Categoria 
@@ -47,10 +48,10 @@ int main()
     setlocale(LC_ALL, "portuguese");
     int idade;
 
-    cout << "Digite uma idade válida (número inteiro positivo): ";
+    cout << "Digite uma idade vÃ¡lida (nÃºmero inteiro positivo): ";
     while (!(cin >> idade) || idade < 0) 
     {
-        cout << "Digite uma idade válida (número inteiro positivo): ";
+        cout << "Digite uma idade vÃ¡lida (nÃºmero inteiro positivo): ";
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }
@@ -72,7 +73,7 @@ int main()
         cout << "Categoria: Senior" << endl;
         break;
     default:
-        cout << "Idade inválida" << endl;
+        cout << "Idade invÃ¡lida" << endl;
     }
 
     return 0;
