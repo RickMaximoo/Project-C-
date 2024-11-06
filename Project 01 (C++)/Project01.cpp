@@ -12,7 +12,7 @@ int main()
     cout << "Digite o número do mês (1 a 12): ";
     cin >> mes;
 
-    // Verifica se o mês está no intervalo válido (1 a 12)
+    
     if (mes < 1 || mes > 12)
     {
         invalido = true;
@@ -46,7 +46,7 @@ int main()
         case 11: mesExtenso = "Novembro";
             break;
         case 12: mesExtenso = "Dezembro"; break;
-        default: mesExtenso = "Mês inválido!"; // Caso haja algum erro na entrada
+        default: mesExtenso = "Mês inválido!"; 
         }
         cout << "O número " << mes << " equivale ao mês de " << mesExtenso << endl;
     }
